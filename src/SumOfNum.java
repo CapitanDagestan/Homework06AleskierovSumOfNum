@@ -9,13 +9,12 @@ public class SumOfNum {
         int count = 0;
         System.out.println("Задане число = " + num);
         while (num != 0) {
-            if (num % 10 == 0){
+            if (num % 10 == 0) {
                 num /= 10;
-            }else {
-                sum += num % 10;
-                num /= 10;
-                count++;
             }
+            sum += num % 10;
+            num /= 10;
+            count++;
         }
         System.out.println("Сума цифр заданого числа = " + sum);
         System.out.println("Кількість ітерацій: " + count);
